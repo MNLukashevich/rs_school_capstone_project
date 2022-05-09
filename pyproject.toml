@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "heart_ml"
+version = "0.1.0"
+description = "Capstone project for RS School Machine Learning course"
+authors = ["mlukas <mikhail.n.lukashevich@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
