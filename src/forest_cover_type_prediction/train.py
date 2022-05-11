@@ -37,13 +37,14 @@ def train(
         test_split_ratio: float,
         use_scaler: bool,
         max_iter: int,
+        logreg_c: float,
 ) -> None:
     features_train, features_val, target_train, target_val = get_dataset(
         dataset_path,
         random_state,
         test_split_ratio,
     )
-    pipeline = create_pipeline(use_scaler, max_iter, random_state)
+    pipeline = create_pipeline(use_scaler, max_iter, logreg_c, random_state)
     pipeline.fit(features_train, target_train)
     accuracy = accuracy_score(target_val, pipeline.predict(features_val))
     click.echo(f"Accuracy: {accuracy}.")
