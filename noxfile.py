@@ -44,6 +44,7 @@ def mypy(session: Session) -> None:
     install_with_constraints(session, "mypy")
     session.run("mypy", *args)
 
+
 @nox.session(python="3.9")
 def tests(session: Session) -> None:
     """Run the test suite."""

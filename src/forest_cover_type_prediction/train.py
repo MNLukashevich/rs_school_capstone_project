@@ -9,6 +9,7 @@ from sklearn.metrics import accuracy_score
 from .data import get_dataset
 from .pipeline import create_pipeline
 
+
 @click.command()
 @click.option(
     "-d",
@@ -33,13 +34,13 @@ from .pipeline import create_pipeline
     type=bool,
 )
 def train(
-        dataset_path: Path,
-        save_model_path: Path,
-        random_state: int,
-        test_split_ratio: float,
-        use_scaler: bool,
-        max_iter: int,
-        logreg_c: float,
+    dataset_path: Path,
+    save_model_path: Path,
+    random_state: int,
+    test_split_ratio: float,
+    use_scaler: bool,
+    max_iter: int,
+    logreg_c: float,
 ) -> None:
     features_train, features_val, target_train, target_val = get_dataset(
         dataset_path,
