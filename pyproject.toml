@@ -1,9 +1,12 @@
 [tool.poetry]
-name = "heart_ml"
+name = "forest_cover"
 version = "0.1.0"
 description = "Capstone project for RS School Machine Learning course"
 authors = ["mlukas <mikhail.n.lukashevich@gmail.com>"]
 license = "MIT"
+
+[tool.poetry.scripts]
+train = "forest_cover_type_prediction.train:train"
 
 [tool.poetry.dependencies]
 python = "^3.9"
