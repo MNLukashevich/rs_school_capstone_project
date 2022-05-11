@@ -1,7 +1,7 @@
 from click.testing import CliRunner
 import pytest
 
-from heart_ml.train import train
+from forest_cover_type_prediction.train import train
 
 
 @pytest.fixture

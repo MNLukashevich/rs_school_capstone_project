@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "forest_cover"
+name = "forest_cover_type_prediction"
 version = "0.1.0"
 description = "Capstone project for RS School Machine Learning course"
 authors = ["mlukas <mikhail.n.lukashevich@gmail.com>"]
