@@ -47,7 +47,7 @@ from .pipeline import create_pipeline
 )
 @click.option(
     "--max-iter",
-    default=400,
+    default=500,
     type=int,
     show_default=True,
 )
