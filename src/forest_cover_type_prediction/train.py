@@ -14,6 +14,8 @@ from .pipeline import create_pipeline
 @click.option(
     "-d",
     "--dataset-path",
+    # for heart disease dataset
+    # default="data/heart.csv",
     default="data/forest_cover.csv",
     type=click.Path(exists=True, dir_okay=False, path_type=Path),
     show_default=True,
@@ -45,7 +47,7 @@ from .pipeline import create_pipeline
 )
 @click.option(
     "--max-iter",
-    default=100,
+    default=400,
     type=int,
     show_default=True,
 )

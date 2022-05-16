@@ -14,6 +14,9 @@ def get_dataset(
     click.echo(f"Dataset shape: {dataset.shape}.")
     features = dataset.drop(labels=["Id", "Cover_Type"], axis=1)
     target = dataset["Cover_Type"]
+    # for heart disease dataset
+    # features = dataset.drop("target", axis=1)
+    # target = dataset["target"]
     features_train, features_val, target_train, target_val = train_test_split(
         features, target, test_size=test_split_ratio, random_state=random_state
     )
